@@ -48,3 +48,32 @@
     --ring: 263.4 70% 50.4%;
   }
 }
+
+@keyframes spectrum-animation {
+  0%,
+  100% {
+    r: 45;
+    opacity: 0.1;
+  }
+  50% {
+    r: 55;
+    opacity: 0.5;
+  }
+}
+
+.spectrum-circle {
+  transform-origin: center;
+  animation: spectrum-animation 2s infinite;
+}
+
+.spectrum-circle:nth-child(1) {
+  animation-delay: -0.4s;
+}
+
+.spectrum-circle:nth-child(2) {
+  animation-delay: -0.2s;
+}
+
+.spectrum-circle:nth-child(3) {
+  animation-delay: 0s;
+}

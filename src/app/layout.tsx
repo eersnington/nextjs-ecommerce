@@ -1,8 +1,10 @@
+/* eslint-disable import/order */
 import { Inter } from 'next/font/google';
 
 import Navbar from './components/Navbar';
 import CartProvider from './components/Providers';
 import ShoppingCartModal from './components/ShoppingCartModal';
+import FloatingMicButton from './components/FloatingButton';
 
 import '@/app/styles/globals.css';
 
@@ -25,6 +27,7 @@ export default function RootLayout({
           <Navbar />
           <ShoppingCartModal />
           {children}
+          <FloatingMicButton /> {/* Add this line */}
         </CartProvider>
       </body>
     </html>

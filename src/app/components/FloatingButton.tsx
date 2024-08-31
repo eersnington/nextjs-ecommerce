@@ -52,7 +52,7 @@ const FloatingMicButton = () => {
         ${
           isOpen
             ? isExpanded
-              ? 'h-[32rem] w-[24rem]'
+              ? 'h-[40rem] w-[24rem]'
               : 'h-64 w-64'
             : 'h-0 w-0'
         } 
@@ -84,7 +84,7 @@ const FloatingMicButton = () => {
 
           {/* State 2: Expanded State */}
           {isExpanded && (
-            <div className='w-full flex-grow'>
+            <div className='w-full grow'>
               {/* Add your recording visualization or transcription here */}
             </div>
           )}
